@@ -82,7 +82,7 @@ export class CourseListContainer extends React.Component {
             <div className="container-fluid">
                 <div className="row mt-3">
                     <div className="col">
-                        <h1>Courses</h1>                        
+                        <h1>Courses 2022</h1>                        
                     </div>
                 </div>
 

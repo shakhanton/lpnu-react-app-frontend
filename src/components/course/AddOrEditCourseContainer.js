@@ -87,11 +87,13 @@ const mapStateToProps = (state, ownProps) => {
     if (courseId && state.selectedCourseReducer.course && courseId === state.selectedCourseReducer.course.id) {
         return {
             initialValues: state.selectedCourseReducer.course,
-            authors: authorsFormattedForDropdown(state.authorReducer.authors)
+            // authors: authorsFormattedForDropdown(state.authorReducer.authors)
+            authors: state.authorReducer.authors
         };
     } else {
         return {
-            authors: authorsFormattedForDropdown(state.authorReducer.authors)
+            // authors: authorsFormattedForDropdown(state.authorReducer.authors)
+            authors: state.authorReducer.authors
         };
     }
 };
